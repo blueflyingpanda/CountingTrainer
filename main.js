@@ -1,4 +1,4 @@
-var manyNumbers = Array.from(Array(1000000).keys());
+var manyNumbers = Array.from(Array(10000).keys());
 
 function shuffle(array) {
     var tmp, current, top = array.length;
@@ -40,6 +40,7 @@ var stats = $("#stats");
 var correctAnswer = $("#correct");
 var incorrectAnswer = $("#incorrect");
 var averageTime = $("#avrT");
+var slider = $("#myRange");
 var start, end, avrTime = 0, index = 0, incorrect = 0, correct = 0;
 var input;
 
@@ -144,6 +145,14 @@ head.click(function (){
 
 out.click(function (){
    utter(input)
+});
+
+slider.on('change', function (){
+    console.log(slider.val());
+    manyNumbers = Array.from(Array(Math.pow(10, slider.val())).keys());
+    manyNumbers = shuffle(manyNumbers);
+    console.log(manyNumbers.length);
+    index = -1;
 });
 //
 });

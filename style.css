@@ -7,7 +7,7 @@ div{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 3vh;
 }
 
 #output{
@@ -17,7 +17,7 @@ div{
 #stats{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 5vh;
+    padding-top: 3vh;
 }
 
 #correct{
@@ -31,7 +31,6 @@ div{
 input{
     font-size: 8vh;
     font-weight: bolder;
-    /* color: indigo; */
 }
 
 button{
